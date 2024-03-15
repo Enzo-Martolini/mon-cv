@@ -1,0 +1,115 @@
+/* Styles pour le corps de la page */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
+/* Styles pour l'en-tête */
+header {
+    margin-left: 2.5%;
+}
+
+/* Styles pour les titres h1 et h2 */
+h1, h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Styles pour les paragraphes */
+p {
+    font-size: 16px;
+}
+
+#presentation_et_photo{
+    display: flex;
+}
+
+#presentation {
+    flex:2;
+}
+
+#photo_profil {
+    flex:2;
+}
+
+/* Styles pour la section principale */
+main {
+    display: flex;
+}
+
+/* Styles pour la liste de compétences */
+#liste_competences {
+    display: flex;
+}
+
+/* Styles pour les éléments de liste */
+li {
+    list-style-type: none;
+    margin-right: 3rem;
+}
+
+/* Styles pour les deux côtés (gauche et droite) */
+#left, #right {
+    flex: 1;
+    margin: 5%;
+}
+
+/* Styles pour le bouton */
+.btn {
+    background: linear-gradient(to right, rgb(200, 143, 0) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: solid rgb(200, 144, 2) 0.2rem;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 15rem;
+    transition: all 190ms ease-out;
+}
+
+/* Styles pour le survol du bouton */
+.btn:hover {
+    background-position: left bottom;
+}
+
+/* Styles pour le pied de page */
+footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 780px) {
+    main {
+    flex-direction: column;
+    }
+
+    div {
+        padding-top: 1rem;
+        width: 10%;
+    }
+
+    footer{
+        flex-direction: column;
+        padding:3rem;
+    }
+    
+    li{
+        margin:0px;
+    }
+
+    .btn {
+        margin-top: 1rem;
+        padding: 10px 26px;
+        border: none;
+        background-color:  rgb(200, 143, 0);
+    }
+
+    #photo_profil img{
+        width:150px;
+        height: auto;
+    }
+}
